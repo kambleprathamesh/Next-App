@@ -25,8 +25,26 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
+
+
+        <div className="fixed top-6 left-20 w-[90%] flex items-center justify-between px-6 py-6 mt-6 backdrop-blur-md  rounded-xl mx-auto border-2 border-gray-200 z-100">
+
+          {/* Left Side - Profile & Name */}
+          <div className="flex items-center space-x-3">
+
+            <span className="text-black font-semibold text-2xl">Medium Website</span>
+          </div>
+
+          {/* Right Side - Theme Toggle & Profile */}
+          <div className="flex items-center space-x-4">
+
+            <div className="w-10 h-10 flex items-center justify-center rounded-full bg-pink-600 text-white text-xl font-bold">
+              P
+            </div>
+          </div>
+        </div>
         {children}
       </body>
     </html>
