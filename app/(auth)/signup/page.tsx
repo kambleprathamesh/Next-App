@@ -1,7 +1,9 @@
 
+import SignupComponent from "@/components/Signup"
+
 export default () => {
     return (
-        <div>signup</div>
+        <div><SignupComponent /></div>
     )
 }
 
